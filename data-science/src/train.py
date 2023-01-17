@@ -111,6 +111,7 @@ def main(args):
 
     # Evaluate Regression performance with the train set
     r2 = r2_score(y_train, yhat_train)
+    print(r2)
     mse = mean_squared_error(y_train, yhat_train)
     rmse = np.sqrt(mse)
     mae = mean_absolute_error(y_train, yhat_train)
